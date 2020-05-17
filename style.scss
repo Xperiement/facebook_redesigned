@@ -1,0 +1,367 @@
+@import "res/scss/_values.scss";
+@import "res/scss/_fixedStruct.scss";
+
+//Default
+body{
+    background: $backgroundColor;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    outline: 0;
+}
+
+
+.home{
+    position: relative;
+    //background: red;
+    margin-top: 4rem;
+    margin-left: 4.5rem;
+    padding-bottom: 5rem;
+    height: calc(100vh - 4rem);
+    width: calc(100% - 4.5rem);
+    //layout
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+
+
+
+
+    .createPost{
+        //background: red;
+        height: 7rem;
+        width: 100%;
+        padding-top: 2rem;
+        //Layout
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+
+
+
+        //Other Layouts
+        .PostContent{
+            width: 90%;
+            max-width: 38rem;
+            height: 4rem;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            font-family: Product sans;
+            font-size: 1.1rem;
+            border: 0;
+            border-radius: 6px;
+            background: #f3f3f3;
+        }
+        .postOptionContainer{
+            width: 90%;
+            max-width: 38rem;
+            height: calc(100% - 3rem);
+            margin-top: .5rem;
+    
+            //Layout
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            .postOptionsBtn{
+                text-decoration: none;
+                text-align: center;
+                color: #636363;
+                min-width: 4rem;
+                border-radius: 5rem;
+                padding-left: .3rem;
+                padding-right: .3rem;
+                padding-top: .15rem;
+                padding-bottom: .15rem;
+                margin-right: 1rem;
+                font-family: AhmetAltun;
+                transition: color 280ms, border-color 280ms, background 280ms;
+            }
+            .postBtn{
+                border: 2px solid $deepGreen;
+                background: $lightGreen;
+                margin-right: 0rem;
+            }
+            .postOptions{
+    
+                //Layout
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: start;
+    
+                //Other layouts
+                .textBtn{
+                    border: 2px solid $deepYellow;
+                    background: $lightYellow;
+                }
+                .imageBtn{
+                    border: 2px solid $lightBlue;
+                    background: $lightBlue;
+                }
+                .videoBtn{
+                    border: 2px solid $lightRed;
+                    background: $lightRed;
+                }
+                .locationBtn{
+                    border: 2px solid $lightPurple;
+                    background: $lightPurple;
+                    padding-left: .6rem;
+                    padding-right: .6rem;
+                }
+            }
+            .postOptionsBtn:hover,
+            .postOptionsBtn:focus{
+                color: white;
+                background: $titleTxt;
+                border-color: $titleTxt;
+            }
+        }
+        
+    }//Create Post
+
+    .newPosts{
+        margin-top: 3rem;
+        padding-top: .5rem;
+        width: 90%;
+        max-width: 40rem;
+        //height: 600px;
+        //background: rgb(247, 247, 247);
+        box-shadow: 0px 10px 10px #00000017;
+        border-radius: .5rem;
+        //Layout
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+
+
+
+        //Other
+        .profileInfo{
+            width: 100%;
+            height: 4.5rem;
+            
+            //Layout
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            //other
+            .profilePhoto img{
+                margin-left: 1rem;
+                margin-right: 1rem;
+                width: 3rem;
+                clip-path: circle();
+                border: 1px solid #8080805e;
+                border-radius: 100%;
+            }
+            .postInfo{
+                height: 100%;
+                //Layout
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-start;
+                margin-top: 1rem;
+
+                //other
+                .profileName{
+                    font-size: 1.1rem;
+                    font-family: Opensans;
+                    //letter-spacing: .1rem;
+                    word-spacing: .1rem;
+                    color: #252525;
+                    margin-bottom: .2rem;
+                }
+                .time{
+                    font-size: .7rem;
+                    font-family: Product Sans;
+                    letter-spacing: .04rem;
+                    word-spacing: .1rem;
+                    color: #fafafa;
+                    background: #43a4ff;
+                    border-radius: 1rem;
+                    padding-left: .5rem;
+                    padding-right: .5rem;
+                    padding-top: .05rem;
+                    padding-bottom: .1rem;
+                }
+            }
+        }//Profile info
+
+
+
+
+        .content{
+            width: 100%;
+            //layout
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            .caption{
+                width: 94%;
+                margin: 1rem;
+                font-size: 1rem;
+                font-family: OpenSans;
+            }
+
+            //others
+            .image{
+                height: 400px;
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+                border-radius: .5rem;
+            }
+            .profilePicUpdate{
+                width: 400px;
+                height: 400px;
+                border-radius: 500px;
+                border: 5px solid $titleTxt;
+                object-fit: cover;
+            }
+        }//Content
+
+        .reactInfo{
+            width: 94%;
+            font-family: Product Sans;
+            color: rgb(85, 85, 85);
+            margin-bottom: 1rem;
+
+        }
+        .reacts{
+            width: 94%;
+
+            //Layout
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+            .reactBtn{
+                height: calc(3rem - .75rem);
+                width: calc(3rem - .8rem);
+                font-size: 1rem;
+                border-radius: 2rem;
+                text-decoration: none;
+                margin-right: 1rem;
+                margin-bottom: 1rem;
+                padding-top: .75rem;
+                padding-left: .8rem;
+                transition: transform 280ms ease-out;
+            }
+            .reactBtn:focus,
+            .reactBtn:hover{
+                transform: scale(130%);
+            }
+            .likeBtn{
+                background: #c1f0ff;
+            }
+            .heartBtn{
+                background: #ffc1e3;
+            }
+            .memeBtn{
+                background: #fff9c1;
+            }
+            .sadBtn{
+                background: #ccc1ff;
+            }
+            .andryBtn{
+                background: #ffc1c1;
+            }
+        }
+
+
+
+    }
+
+
+
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.status{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: calc(100% - 4.5rem);
+    height: 1.6rem;
+    box-shadow: 0px -1px 5px #00000017;
+    background: white;
+    z-index: 1;
+    //layout
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+
+    .new{
+        margin-left: 1rem;
+        font-family: ArcaMajora;
+        text-transform: uppercase;
+        font-size: .75rem;
+        letter-spacing: .12rem;
+        user-select: none;
+        word-spacing: .3rem;
+        color: $titleTxt;
+    }
+
+
+    .statusContainer{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-right: 1rem;
+        .statusLogo{
+            margin-right: .5rem;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            .ico{
+                font-size: .5rem;
+                color: #00ce89;
+            }
+        }
+        .statusTxt{
+            font-family: ArcaMajora;
+            text-transform: uppercase;
+            font-size: .75rem;
+            letter-spacing: .12rem;
+            user-select: none;
+        }
+    }
+}

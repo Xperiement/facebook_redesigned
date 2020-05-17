@@ -1,0 +1,36 @@
+//Font Faces
+@font-face{
+    font-family: AhmetAltun;
+    src: url("res/fonts/AhmetAltunRegular.otf");
+}
+@font-face{
+    font-family: ArcaMajora;
+    src: url("res/fonts/ArcaMajora3.otf");
+}
+@font-face{
+    font-family: ProductSans;
+    src: url("res/fonts/ProductSansRegular.ttf");
+}
+@font-face{
+    font-family: Opensans;
+    src: url("res/fonts/OpenSans-Regular.ttf");
+}
+
+$colorPrimary: #e9faff;
+$colorSecondary: #00bfff;
+$colorTitle: #0084d1;
+$backgroundColor: #f8f8f8;
+$backgroundColor-dark: #1f1f1f;
+
+$sideBtnBg: #b1b1b1;
+$titleTxt: #535353;
+
+
+$lightBlue: #e9faff;
+$lightRed: #ffe9f2;
+$lightPurple: #f1e9ff;
+$lightYellow: #fff7e9;
+$deepYellow: #ffe2af;
+
+$lightGreen: #dfffef;
+$deepGreen: #afffd7;

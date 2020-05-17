@@ -1,0 +1,147 @@
+//Fixed Layouts
+.mainHead{
+    background: $backgroundColor;
+    width: 100%;
+    height: 4rem;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    //border-bottom: 2px solid rgb(223, 223, 223);
+    box-shadow: 0px 0px 5px #00000013;
+
+    //Layout
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    //Sublayouts
+    .titleContainer{
+        text-decoration: none;
+        display: flex;
+        flex-direction: row;
+        margin-left: 1.5rem;
+        .facebookLogo{
+            font-size: 1.8rem;
+            color: $titleTxt;
+            transition: color 280ms;
+        }
+        .facebookTxt{
+            font-size: 1.85rem;
+            text-decoration: none;
+            color: $titleTxt;
+            font-family: Product Sans;
+        }
+    }
+    .titleContainer:focus,
+    .titleContainer:hover{
+        .facebookLogo{
+            color: $colorTitle;
+        }
+    }
+    //Search
+    .search{
+        height: 1.5rem;
+        border-radius: 50px;
+        border: 2px solid $sideBtnBg;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: .3rem;
+        padding-bottom: .3rem;
+        width: 150px;
+        text-align: center;
+    }
+
+
+
+
+    //UserProfile info Header
+    .profileInfoContainer{
+        padding-left: .8rem;
+        padding-right: .8rem;
+        margin-right: 1.5rem;
+        border-radius: 30px;
+        border: 2px solid $sideBtnBg;
+        height: 2.2rem;
+        //Layout
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+        transition: background 280ms;
+
+        //OtherComponents
+        .profileDropDown{
+            margin-top: .6rem;
+            .ico{
+                color: $titleTxt;
+                padding-right: .8rem;
+                transition: color 280ms;
+            }
+        }
+        p{
+            margin-top: .5rem;
+            color: $titleTxt;
+            font-family: AhmetAltun;
+            margin-right: .8rem;
+            transition: color 280ms;
+            user-select: none;
+        }
+        .userIco{
+            margin-top: .5rem;
+            .ico{
+                color: $colorTitle;
+                transition: color 280ms;
+            }
+        }
+    }
+    .profileInfoContainer:focus,
+    .profileInfoContainer:hover{
+        background: #f7f7f7;
+    }
+}
+.sideTab{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: calc(100% - 4rem);
+    width: 4.5rem;
+    background: $backgroundColor;
+    box-shadow: 2px 0px 10px #00000013;
+    z-index: 0;
+    //Flex Properties
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+.spacer{
+    height: calc(100% - 27rem);
+}
+.btnSideBar{
+    width: 100%;
+    height: 4.5rem;
+    text-decoration: none !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .btnS{
+        color: $sideBtnBg;
+        font-size: 1.5rem;
+        transition: color 280ms;
+    }
+    transition: background 280ms;
+}
+.btnSideBar:focus,
+.btnSideBar:hover{
+    background: $colorSecondary;
+    .btnS{
+        color: $colorPrimary;
+    }
+}
+.btnActive{
+    background: $colorSecondary;
+    .btnS{
+        color: $colorPrimary;
+    } 
+}

@@ -1,0 +1,640 @@
+@font-face {
+  font-family: AhmetAltun;
+  src: url("res/fonts/AhmetAltunRegular.otf");
+}
+
+@font-face {
+  font-family: ArcaMajora;
+  src: url("res/fonts/ArcaMajora3.otf");
+}
+
+@font-face {
+  font-family: ProductSans;
+  src: url("res/fonts/ProductSansRegular.ttf");
+}
+
+@font-face {
+  font-family: Opensans;
+  src: url("res/fonts/OpenSans-Regular.ttf");
+}
+
+.mainHead {
+  background: #f8f8f8;
+  width: 100%;
+  height: 4rem;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  -webkit-box-shadow: 0px 0px 5px #00000013;
+          box-shadow: 0px 0px 5px #00000013;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.mainHead .titleContainer {
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-left: 1.5rem;
+}
+
+.mainHead .titleContainer .facebookLogo {
+  font-size: 1.8rem;
+  color: #535353;
+  -webkit-transition: color 280ms;
+  transition: color 280ms;
+}
+
+.mainHead .titleContainer .facebookTxt {
+  font-size: 1.85rem;
+  text-decoration: none;
+  color: #535353;
+  font-family: Product Sans;
+}
+
+.mainHead .titleContainer:focus .facebookLogo,
+.mainHead .titleContainer:hover .facebookLogo {
+  color: #0084d1;
+}
+
+.mainHead .search {
+  height: 1.5rem;
+  border-radius: 50px;
+  border: 2px solid #b1b1b1;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: .3rem;
+  padding-bottom: .3rem;
+  width: 150px;
+  text-align: center;
+}
+
+.mainHead .profileInfoContainer {
+  padding-left: .8rem;
+  padding-right: .8rem;
+  margin-right: 1.5rem;
+  border-radius: 30px;
+  border: 2px solid #b1b1b1;
+  height: 2.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: background 280ms;
+  transition: background 280ms;
+}
+
+.mainHead .profileInfoContainer .profileDropDown {
+  margin-top: .6rem;
+}
+
+.mainHead .profileInfoContainer .profileDropDown .ico {
+  color: #535353;
+  padding-right: .8rem;
+  -webkit-transition: color 280ms;
+  transition: color 280ms;
+}
+
+.mainHead .profileInfoContainer p {
+  margin-top: .5rem;
+  color: #535353;
+  font-family: AhmetAltun;
+  margin-right: .8rem;
+  -webkit-transition: color 280ms;
+  transition: color 280ms;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.mainHead .profileInfoContainer .userIco {
+  margin-top: .5rem;
+}
+
+.mainHead .profileInfoContainer .userIco .ico {
+  color: #0084d1;
+  -webkit-transition: color 280ms;
+  transition: color 280ms;
+}
+
+.mainHead .profileInfoContainer:focus,
+.mainHead .profileInfoContainer:hover {
+  background: #f7f7f7;
+}
+
+.sideTab {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: calc(100% - 4rem);
+  width: 4.5rem;
+  background: #f8f8f8;
+  -webkit-box-shadow: 2px 0px 10px #00000013;
+          box-shadow: 2px 0px 10px #00000013;
+  z-index: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.spacer {
+  height: calc(100% - 27rem);
+}
+
+.btnSideBar {
+  width: 100%;
+  height: 4.5rem;
+  text-decoration: none !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: background 280ms;
+  transition: background 280ms;
+}
+
+.btnSideBar .btnS {
+  color: #b1b1b1;
+  font-size: 1.5rem;
+  -webkit-transition: color 280ms;
+  transition: color 280ms;
+}
+
+.btnSideBar:focus,
+.btnSideBar:hover {
+  background: #00bfff;
+}
+
+.btnSideBar:focus .btnS,
+.btnSideBar:hover .btnS {
+  color: #e9faff;
+}
+
+.btnActive {
+  background: #00bfff;
+}
+
+.btnActive .btnS {
+  color: #e9faff;
+}
+
+body {
+  background: #f8f8f8;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+}
+
+.home {
+  position: relative;
+  margin-top: 4rem;
+  margin-left: 4.5rem;
+  padding-bottom: 5rem;
+  height: calc(100vh - 4rem);
+  width: calc(100% - 4.5rem);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.home .createPost {
+  height: 7rem;
+  width: 100%;
+  padding-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.home .createPost .PostContent {
+  width: 90%;
+  max-width: 38rem;
+  height: 4rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-family: Product sans;
+  font-size: 1.1rem;
+  border: 0;
+  border-radius: 6px;
+  background: #f3f3f3;
+}
+
+.home .createPost .postOptionContainer {
+  width: 90%;
+  max-width: 38rem;
+  height: calc(100% - 3rem);
+  margin-top: .5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.home .createPost .postOptionContainer .postOptionsBtn {
+  text-decoration: none;
+  text-align: center;
+  color: #636363;
+  min-width: 4rem;
+  border-radius: 5rem;
+  padding-left: .3rem;
+  padding-right: .3rem;
+  padding-top: .15rem;
+  padding-bottom: .15rem;
+  margin-right: 1rem;
+  font-family: AhmetAltun;
+  -webkit-transition: color 280ms, border-color 280ms, background 280ms;
+  transition: color 280ms, border-color 280ms, background 280ms;
+}
+
+.home .createPost .postOptionContainer .postBtn {
+  border: 2px solid #afffd7;
+  background: #dfffef;
+  margin-right: 0rem;
+}
+
+.home .createPost .postOptionContainer .postOptions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.home .createPost .postOptionContainer .postOptions .textBtn {
+  border: 2px solid #ffe2af;
+  background: #fff7e9;
+}
+
+.home .createPost .postOptionContainer .postOptions .imageBtn {
+  border: 2px solid #e9faff;
+  background: #e9faff;
+}
+
+.home .createPost .postOptionContainer .postOptions .videoBtn {
+  border: 2px solid #ffe9f2;
+  background: #ffe9f2;
+}
+
+.home .createPost .postOptionContainer .postOptions .locationBtn {
+  border: 2px solid #f1e9ff;
+  background: #f1e9ff;
+  padding-left: .6rem;
+  padding-right: .6rem;
+}
+
+.home .createPost .postOptionContainer .postOptionsBtn:hover,
+.home .createPost .postOptionContainer .postOptionsBtn:focus {
+  color: white;
+  background: #535353;
+  border-color: #535353;
+}
+
+.home .newPosts {
+  margin-top: 3rem;
+  padding-top: .5rem;
+  width: 90%;
+  max-width: 40rem;
+  -webkit-box-shadow: 0px 10px 10px #00000017;
+          box-shadow: 0px 10px 10px #00000017;
+  border-radius: .5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.home .newPosts .profileInfo {
+  width: 100%;
+  height: 4.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.home .newPosts .profileInfo .profilePhoto img {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  width: 3rem;
+  -webkit-clip-path: circle();
+          clip-path: circle();
+  border: 1px solid #8080805e;
+  border-radius: 100%;
+}
+
+.home .newPosts .profileInfo .postInfo {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-top: 1rem;
+}
+
+.home .newPosts .profileInfo .postInfo .profileName {
+  font-size: 1.1rem;
+  font-family: Opensans;
+  word-spacing: .1rem;
+  color: #252525;
+  margin-bottom: .2rem;
+}
+
+.home .newPosts .profileInfo .postInfo .time {
+  font-size: .7rem;
+  font-family: Product Sans;
+  letter-spacing: .04rem;
+  word-spacing: .1rem;
+  color: #fafafa;
+  background: #43a4ff;
+  border-radius: 1rem;
+  padding-left: .5rem;
+  padding-right: .5rem;
+  padding-top: .05rem;
+  padding-bottom: .1rem;
+}
+
+.home .newPosts .content {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.home .newPosts .content .caption {
+  width: 94%;
+  margin: 1rem;
+  font-size: 1rem;
+  font-family: OpenSans;
+}
+
+.home .newPosts .content .image {
+  height: 400px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-radius: .5rem;
+}
+
+.home .newPosts .content .profilePicUpdate {
+  width: 400px;
+  height: 400px;
+  border-radius: 500px;
+  border: 5px solid #535353;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.home .newPosts .reactInfo {
+  width: 94%;
+  font-family: Product Sans;
+  color: #555555;
+  margin-bottom: 1rem;
+}
+
+.home .newPosts .reacts {
+  width: 94%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.home .newPosts .reacts .reactBtn {
+  height: calc(3rem - .75rem);
+  width: calc(3rem - .8rem);
+  font-size: 1rem;
+  border-radius: 2rem;
+  text-decoration: none;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  padding-top: .75rem;
+  padding-left: .8rem;
+  -webkit-transition: -webkit-transform 280ms ease-out;
+  transition: -webkit-transform 280ms ease-out;
+  transition: transform 280ms ease-out;
+  transition: transform 280ms ease-out, -webkit-transform 280ms ease-out;
+}
+
+.home .newPosts .reacts .reactBtn:focus,
+.home .newPosts .reacts .reactBtn:hover {
+  -webkit-transform: scale(130%);
+          transform: scale(130%);
+}
+
+.home .newPosts .reacts .likeBtn {
+  background: #c1f0ff;
+}
+
+.home .newPosts .reacts .heartBtn {
+  background: #ffc1e3;
+}
+
+.home .newPosts .reacts .memeBtn {
+  background: #fff9c1;
+}
+
+.home .newPosts .reacts .sadBtn {
+  background: #ccc1ff;
+}
+
+.home .newPosts .reacts .andryBtn {
+  background: #ffc1c1;
+}
+
+.status {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: calc(100% - 4.5rem);
+  height: 1.6rem;
+  -webkit-box-shadow: 0px -1px 5px #00000017;
+          box-shadow: 0px -1px 5px #00000017;
+  background: white;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.status .new {
+  margin-left: 1rem;
+  font-family: ArcaMajora;
+  text-transform: uppercase;
+  font-size: .75rem;
+  letter-spacing: .12rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  word-spacing: .3rem;
+  color: #535353;
+}
+
+.status .statusContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 1rem;
+}
+
+.status .statusContainer .statusLogo {
+  margin-right: .5rem;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.status .statusContainer .statusLogo .ico {
+  font-size: .5rem;
+  color: #00ce89;
+}
+
+.status .statusContainer .statusTxt {
+  font-family: ArcaMajora;
+  text-transform: uppercase;
+  font-size: .75rem;
+  letter-spacing: .12rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+/*# sourceMappingURL=style.css.map */
